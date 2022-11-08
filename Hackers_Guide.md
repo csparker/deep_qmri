@@ -34,7 +34,14 @@ That's it, you're all set up. Now let's start Hacking!
 
 # Hacking Tasks
 
-**Incorporate the Rician likelihood loss function into unsupervised learning**
+
+Below is a list of tasks for the Hackathon, with hints or suggestions under each.
+
+This is only a rough guide on what to do, not a strict requirement. So feel free to suggest other things that might not be on the list!
+
+<br/>
+
+**1. Incorporate the Rician likelihood loss function into unsupervised learning**
 
 - Compare the Rician distribution with its differentiable approximation.
 	- what value of Nk is good?
@@ -56,7 +63,7 @@ That's it, you're all set up. Now let's start Hacking!
 
 <br/>
 
-**Evaluate accuracy of parameter estimation**
+**2. Evaluate accuracy of parameter estimation**
 
 - Quantify bias and variance when using the sum of squared loss function.
 	- Assess for a single ground truth parameter value.
@@ -66,7 +73,7 @@ That's it, you're all set up. Now let's start Hacking!
 
 <br/>
 
-**Maximum aposteriori inference**
+**3. Maximum aposteriori inference**
 
 - Specify plausible priors on each parameters based on the literature.
 	- These may be specific to a particular anatomical region.
@@ -76,7 +83,7 @@ That's it, you're all set up. Now let's start Hacking!
 
 <br/>
 
-**Test on Real data**
+**4. Test on Real data**
 
 - Download some real DWI data (i.e. from the Human Connectome Project)
 	- I may have some already.
@@ -95,7 +102,7 @@ That's it, you're all set up. Now let's start Hacking!
 
 <br/>
 
-**Try another DWI model** 
+**5. Try another DWI model** 
 
 - Specify the forward model and code this into the network.
 	- The diffusion kurtosis is a good choice because it is even more reliant on low SNR images.
@@ -107,6 +114,30 @@ That's it, you're all set up. Now let's start Hacking!
 	- Is the benefit greater for this DWI model than the IVIM model?
 
 
+<br/>
+
+**Generalise the Code**
+
+- Different DWI models
+- Inclusion/exclusion of priors
+- The loss function
+
+<br/>
+
+**6. Alternatives to the Rician likelihood**
+
+- Offset gaussian noise model
+	- This uses sum of squares loss function but to an offset signal
+	- see the Resources section for a link to the paper
+
+<br/>
+
+**7. Outcomes**
+- Tutorial explaining the Rician likelihood approach to unsupervised qMRI (simulated data)
+- Tutorial showing the maximum likelihood approach applied to real data
+- Tutorial on maximum aposteriori loss function (simulated data)
+- Tutorial showing the maximum aposteriori approach applied to real data
+- Theoretical description of the approach
 
 
 # Resources
@@ -152,12 +183,22 @@ https://link.springer.com/chapter/10.1007/978-3-031-11203-4_16
 Another paper on Deep learning of qMRI parameters and training data distribution\
 https://onlinelibrary.wiley.com/doi/full/10.1002/mrm.29014
 
+IVIM diffusion MRI model\
+https://pubs.rsna.org/doi/10.1148/radiology.161.2.3763909
+
+Diffusion kurtosis model\
+https://www.ajronline.org/doi/full/10.2214/AJR.13.11365
+
+Offset gaussian noise model\
+https://onlinelibrary.wiley.com/doi/full/10.1002/mrm.25080
+
 <br/>
 
 *Other*
 
 Repository for the original deep learning of qMRI\
 https://github.com/sebbarb/deep_ivim
+
 
 
 
