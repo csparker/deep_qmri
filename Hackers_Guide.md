@@ -34,11 +34,11 @@ That's it, you're all set up. Now let's start Hacking!
 
 # Hacking Tasks
 
-*Rician likelihood loss function*
+**Rician likelihood loss function**
 - Compare the Rician distribution with the differentiable approximation of the Rician distribution.
--- what value of Nk is good?
+	- what value of Nk is good?
 - Using simulated Rician data, compare the likelihood of the data under a Rician distribution and under the differentiable approximation of the Rician distribution.
--- Are the likelihoods highly correlated?
+	- Are the likelihoods highly correlated?
 - Create a custom PyTorch loss function that calculates the log-likelihood of DWI data under the approximate Rician distribution.
 -- Use a fixed value of sigma for now.
 - Add the new PyTorch loss function into the unsupervised learning network.
