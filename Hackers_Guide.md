@@ -34,25 +34,78 @@ That's it, you're all set up. Now let's start Hacking!
 
 # Hacking Tasks
 
-**Rician likelihood loss function**
-- Compare the Rician distribution with the differentiable approximation of the Rician distribution.
+**Incorporate the Rician likelihood loss function into unsupervised learning**
+
+- Compare the Rician distribution with its differentiable approximation.
 	- what value of Nk is good?
+
 - Using simulated Rician data, compare the likelihood of the data under a Rician distribution and under the differentiable approximation of the Rician distribution.
 	- Are the likelihoods highly correlated?
+
 - Create a custom PyTorch loss function that calculates the log-likelihood of DWI data under the approximate Rician distribution.
--- Use a fixed value of sigma for now.
+	- Use a fixed value of sigma for now.
+
 - Add the new PyTorch loss function into the unsupervised learning network.
--- You can use the logsumexp() function described in Simpson et al (2021).
+	- You can use the logsumexp() function described in Simpson et al (2021).
+
 - Use the network to estimate IVIM parameters from simulated data.
--- Do the parameter estimates look reasonable?
+	- Do the parameter estimates look reasonable?
+
 - Allow the network to learn the sigma value.
--- You will need to change the network architecture.
+	- You will need to change the network architecture.
 
 <br/>
 
-**Evaluation of parameter estimation**
-- Evaluate the accuracy of the parameter estimation using the least squares loss function (quantify bias and variance)
-- Evaluate the accuracy of the parameter estimation using the Rician log-likelihood loss function
+**Evaluate accuracy of parameter estimation**
+
+- Quantify bias and variance when using the sum of squared loss function.
+	- Assess for a single ground truth parameter value.
+
+- Quantify bias and variance when using the Rician log-likelihood loss function.
+	- Is bias significantly reduced? What about variance?
+
+<br/>
+
+**Maximum aposteriori inference**
+
+- Specify plausible priors on each parameters based on the literature.
+	- These may be specific to a particular anatomical region.
+
+- Adapt the network to perform maximum aposteriori inference
+	- This should be a simple update.
+
+<br/>
+
+**Test on Real data**
+
+- Download some real DWI data (i.e. from the Human Connectome Project)
+	- I may have some already.
+
+- Re-train the network on synthetic DWI data acquired with the same settings as real data.
+	- You could create a seperate tutorial for this.
+
+- Estimate the parameter maps for real data
+	- Save the parameter maps as nifti files.
+
+- Repeat the above but for the sum of squares loss function
+	- Can the network settings be saved to prevent re-training?
+
+- Compare the parameter estimates between sum of squares and Rician likelihood loss function
+	- Variance of parameters within ROIs might be a good evaluation metric.
+
+<br/>
+
+**Try another DWI model** 
+
+- Specify the forward model and code this into the network.
+	- The diffusion kurtosis is a good choice because it is even more reliant on low SNR images.
+
+- Re-train the network using simulated data and evaluate parameter estimation performance
+	- Make sure the acquisition settings are suitable for the model.
+
+- Assess parameter estimation performance on real data
+	- Is the benefit greater for this DWI model than the IVIM model?
+
 
 
 
