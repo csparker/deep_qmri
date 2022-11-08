@@ -160,7 +160,6 @@ This is how you dropdown.
 
 <br/>
 
-<details>
 
 ## Hackathon Outcomes ##
 
