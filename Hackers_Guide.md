@@ -149,7 +149,7 @@ This is how you dropdown.
 <br/>
 
 <details>
-<summary><h3>6. Alternatives to the Rician likelihood</h3></summary>
+<summary><h3>7. Alternatives to the Rician likelihood</h3></summary>
 <br>
 
 - Offset gaussian noise model
@@ -161,16 +161,14 @@ This is how you dropdown.
 <br/>
 
 <details>
-<summary><h3>7. Outcomes</h3></summary>
-<br>
+
+## Hackathon Outcomes ##
 
 - Tutorial explaining the Rician likelihood approach to unsupervised qMRI (simulated data)
 - Tutorial showing the Rician likelihood approach applied to real data
 - Tutorial on maximum aposteriori loss function (simulated data)
 - Tutorial showing the maximum aposteriori approach applied to real data
 - Theoretical description of the approach
-
-</details>
 
 
 # Resources
