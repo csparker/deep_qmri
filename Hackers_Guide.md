@@ -1,4 +1,4 @@
-Welcome Hackers! Below is a brief overview of the rationalle for the project. In the Set-up section, there are some instructions on things you will need to do before you start hacking. Once you've set up, the hacking guide and list of useful resources are there to help us complete the project!
+Welcome Hackers! Below is more detail about the rationalle for the project. In the Set-up section there are some instructions on things you will need to do before you start hacking. Once you've set up, the hacking guide and list of useful resources are there to provide a guide to help us complete the project!
 
 # Rationalle
 
