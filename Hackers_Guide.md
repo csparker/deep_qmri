@@ -12,18 +12,17 @@ Once you're all set up, the [Hacking Tasks](#hacking-tasks) and [Resources](#res
 
 **What is quantitative MRI?**
 
-Quantitative MRI aims to derive countable explanations (i.e. quantities) from the data we measure in an MRI image. This is acheived by first constructing an explanation for the data. The explanation, or model, maps from the quantities we care about (e.g. number of cells, fiber orientation) to the data. Then, we find out how much of each quantity in the model there should be in order that the data predicted by the model matches the data we observed. This is called 'model fitting' or 'parameter estimation'. 	
-
+Quantitative MRI derives countable explanations (i.e. quantities) from the data we measure in an MRI image. This is acheived by first constructing an explanation for the data. The explanation, or model, provides a mapping from the quantities we care about (e.g. number of cells, fiber orientation) to the MRI data we measured. Then, we find out how much of each quantity in the model there should be so that the MRI data predicted by the model matches the data we observed. This is called 'model fitting' or 'parameter estimation'.
 
 <br>
 
 **Why do we need machine learning?**
 
-Traditionally model fitting is performed on each voxel, one after the other (in qMRI each voxel contains multiple data points). However, as our explanations have gotten more and more detailed, and hence our models more and more complicated, the process of parameter estimation has become increasingly difficult due to the shear numbers of parameters that need to be tuned and the possibility that an incorrect fitting may appear to be the best fit when it is not. 
+Traditionally model fitting is performed on each voxel, one after the other (in qMRI each voxel contains multiple data points). However, our explanations have got more and more detailed, and so our models have become more and more complicated. The process of parameter estimation has become increasingly difficult due to the shear numbers of parameters that need to be tuned and the possibility that an incorrect fitting may appear to be the best fit when it is not. 
 
-To overcome this, machine learning has been used to construct a direct mapping from the data we observe to the parameter estimates, taking advantage of the ability of neural networks to represent a vast range of highly complex functions. In particular, an unsupervised learning approach is desireable because it does not require us to have any ground truth labels on the parameters, which in practice is never possible. 
+To overcome this, machine learning has been used to construct a direct mapping from the data we observe to the parameter estimates, taking advantage of the ability of neural networks to represent a vast range of highly complex functions. Unsupervised learning is particularly desireable because it does not require us to have any ground truth labels on the parameters, which in practice is never possible. 
 
-In comparison to voxel-wise fitting, unsupervised learning tries to match the predicted signal with the observed data where the parameters are deriveable from an encoded latent space. In other words, the network learns to map from the data to the predicted data via the parameters of interest and the specified forward model, similarly to an autoencoder. 
+In comparison to voxel-wise fitting, unsupervised learning tries to match the predicted signal with the observed data. The parameters are derived from an encoded latent space. In other words, the network learns to map from the data to the best predicted data via the parameters of interest, by using the model predictions, similarly to an autoencoder. 
 
 <br>
 
@@ -33,7 +32,7 @@ A big problem with current unsupervised machine learning approaches is that the 
 
 Lack of gaussianity in MRI images is especially apparent for low SNR MRI images - at low SNR the Rician distribution deviates substantially from a gaussian distribution. The result is that the signal predictions are optimised incorrectly, resulting in incorrect parameter estimates. 
 
-This has not been previously addressed because the Rician probability density function is not differentiable, and differentiable loss functions are needed for backpropagation to work in machine learning. Recently, a paper has introduced a differentiable approximation of the Rician distribution and a differentiable log-likelihood for it. The rician noise model can therefore be adopted and incorporated into unsupervised machine learning to make parameter estimates more accurate.
+This has not been previously addressed because the Rician probability density function is not differentiable, and differentiable loss functions are needed for backpropagation to work in machine learning. Recently, a paper has introduced a [differentiable approximation of the Rician distribution](https://link.springer.com/chapter/10.1007/978-3-031-11203-4_16) and a differentiable log-likelihood for it. The rician noise model can therefore be adopted and incorporated into unsupervised machine learning to make parameter estimates more accurate.
 
 <br>
 
