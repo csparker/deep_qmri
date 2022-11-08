@@ -1,6 +1,8 @@
 Welcome Hackers! 
 
-Below is a more detailed [rationalle](#rationalle) for the project. In the [Set-up](#set-up) section there are some instructions on things you will need to do before you start hacking. Once you're all set up, the [Hacking Tasks](#hacking-tasks) and [Resources](#resources) sections are there to help us complete the project!
+Below is a more detailed [Rationalle](#rationalle) for the project. In the [Set-up](#set-up) section there are some instructions on things you will need to do before you start hacking. 
+
+Once you're all set up, the [Hacking Tasks](#hacking-tasks) and [Resources](#resources) sections are there to help us complete the project!
 
 # Rationalle
 
@@ -13,6 +15,18 @@ To overcome this, machine learning has been used to construct a direct mapping f
 However, a big problem with current unsupervised approaches is that the predicted signal is always wrong, by design. This is because current methods most typically use sum of squared differences as the cost function, which only works when the MRI noise is gaussian distributed. Effectively, it is always assuming the wrong model for the data, because in fact, the noise in MRI images is rician distributed. This is especially important for parameters derived from low SNR MRI images, because at low SNR the Rician distribution deviates substantially from a gaussian distribution. The result is that the signal predictions are optimised incorrectly, resulting in incorrect parameter estimates. This problem has not previously been addressed because the Rician distribution is not differentiable, and differentiable loss functions are needed for backpropagation to work in machine learning. Recently, a paper has introduced a differentiable approximation of the Rician distribution and a differentiable log-likelihood for it. The rician noise model can therefore be adopted and incorporated into unsupervised machine learning to make parameter estimates more accurate.
 
 # Set-up
+
+First, you will need to [install Python](https://www.python.org/downloads/).
+
+You then need to install some Python packages. I recommend using the "pip3" command to do this, as in:
+'''
+pip3 install numpy
+'''
+
+The packages you need are:
+- [numpy](https://numpy.org/install/)
+
+
 
 # Hacking Tasks
 
