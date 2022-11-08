@@ -36,7 +36,7 @@ That's it, you're all set up. Now let's start Hacking!
 
 # Resources
 
-*Hackathon*
+*Hackathon-related*
 
 CMIC Hackathon website
 https://cmic-ucl.github.io/CMICHACKS/
@@ -44,15 +44,21 @@ https://cmic-ucl.github.io/CMICHACKS/
 Project Issues
 https://github.com/CMIC-UCL/CMICHACKS/issues/7
 
+
 *Repository links*
 
-[Hackers Guide](Hackers_Guide.md)
+Hackers Guide
+https://github.com/csparker/deep_qmri/blob/master/Hackers_Guide.md
 
-[Our tutorial](deep_qmri_rician.ipynb)
+Our tutorial (in progress)
+https://github.com/csparker/deep_qmri/blob/master/deep_qmri_rician.ipynb
 
-[Original unsupservised tutorial](deep_qmri_leastsquares_demo.ipynb) (Jupyter notebook)
+Original unsupservised tutorial (Jupyter notebook)
+https://github.com/csparker/deep_qmri/blob/master/deep_qmri_leastsquares_demo.ipynb
 
-[Original unsupservised tutorial](deep_qmri_leastsquares_demo.py) (Python code)
+Original unsupservised tutorial (Python code)
+https://github.com/csparker/deep_qmri/blob/master/deep_qmri_leastsquares_demo.py
+
 
 
 *Papers*
