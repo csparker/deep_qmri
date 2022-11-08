@@ -23,7 +23,7 @@ You will then need to install some Python packages. You can use the "pip3" comma
 pip3 install some-package
 ```
 
-We need the following packages:
+The following packages are needed:
 - [numpy](https://numpy.org/install/)
 - [matplotlib](https://matplotlib.org/stable/users/installing/index.html)
 - [PyTorch](https://pytorch.org/TensorRT/tutorials/installation.html)
@@ -33,6 +33,28 @@ That's it, you're all set up. Now let's start Hacking!
 
 
 # Hacking Tasks
+
+*Rician likelihood loss function*
+- Compare the Rician distribution with the differentiable approximation of the Rician distribution.
+-- what value of Nk is good?
+- Using simulated Rician data, compare the likelihood of the data under a Rician distribution and under the differentiable approximation of the Rician distribution.
+-- Are the likelihoods highly correlated?
+- Create a custom PyTorch loss function that calculates the log-likelihood of DWI data under the approximate Rician distribution.
+-- Use a fixed value of sigma for now.
+- Add the new PyTorch loss function into the unsupervised learning network.
+-- You can use the logsumexp() function described in Simpson et al (2021).
+- Use the network to estimate IVIM parameters from simulated data.
+-- Do the parameter estimates look reasonable?
+- Allow the network to learn the sigma value.
+-- You will need to change the network architecture.
+
+<br/>
+
+**Evaluation of parameter estimation**
+- Evaluate the accuracy of the parameter estimation using the least squares loss function (quantify bias and variance)
+- Evaluate the accuracy of the parameter estimation using the Rician log-likelihood loss function
+
+
 
 # Resources
 
@@ -46,7 +68,7 @@ https://github.com/CMIC-UCL/CMICHACKS/issues/7
 
 <br/>
 
-*Repository links*
+*Repository internal links*
 
 Hackers Guide\
 https://github.com/csparker/deep_qmri/blob/master/Hackers_Guide.md
@@ -63,7 +85,7 @@ https://github.com/csparker/deep_qmri/blob/master/deep_qmri_leastsquares_demo.py
 <br/>
 
 
-*Papers*
+*Relevant Publications*
 
 Original deep learning of qMRI paper\
 https://onlinelibrary.wiley.com/doi/abs/10.1002/mrm.27910
@@ -76,4 +98,13 @@ https://link.springer.com/chapter/10.1007/978-3-031-11203-4_16
 
 Another paper on Deep learning of qMRI parameters and training data distribution\
 https://onlinelibrary.wiley.com/doi/full/10.1002/mrm.29014
+
+<br/>
+
+*Other*
+
+Repository for the original deep learning of qMRI\
+https://github.com/sebbarb/deep_ivim
+
+
 
