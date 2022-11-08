@@ -50,7 +50,7 @@ This is how you dropdown.
 
 
 <details>
-<summary><h2>**1. Incorporate the Rician likelihood loss function into unsupervised learning**</h2></summary>
+<summary><h3>1. Incorporate the Rician likelihood loss function into unsupervised learning</h3></summary>
 <br>
 
 - Compare the Rician distribution with its differentiable approximation.
