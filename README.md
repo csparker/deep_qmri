@@ -1,16 +1,12 @@
-# Deep Learning How to Fit an Intravoxel Incoherent Motion Model to Diffusion-Weighted MRI
+# Deep Learning of qMRI parameters - CMIC Hackathon 2022
 
-This repository contains code related to the publication:
+This repository contains guides, demo's and other resources to aid Hackers working on the project 'Deep learning of qMRI parameters'.
 
-_Deep Learning How to Fit an Intravoxel Incoherent Motion Model to Diffusion-Weighted MRI_
+The project aims to make deep learning of qMRI more accurate by incorporating a loss function that correctly handles image noise.
 
-by _Sebastiano Barbieri, Oliver J. Gurney-Champion, Remy Klaassen, Harriet C. Thoeny_
+Once complete, we will demonstrate a tutorial for the approach here.
 
-https://onlinelibrary.wiley.com/doi/full/10.1002/mrm.27910
+Hacker's can start by looking at the Hackers Guide!
 
-A preprint is available at: https://arxiv.org/abs/1903.00095
 
-To use the proposed approach, start by taking a look at the Jupyter notebook deep_ivim_demo.ipynb
-
-In case you have any questions, contact me at s.barbieri /AT/ unsw.edu.au
 
