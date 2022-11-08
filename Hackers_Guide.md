@@ -16,16 +16,22 @@ However, a big problem with current unsupervised approaches is that the predicte
 
 # Set-up
 
-First, you will need to [install Python](https://www.python.org/downloads/).
+First, you will need to install [Python](https://www.python.org/downloads/).
 
-You then need to install some Python packages. I recommend using the "pip3" command to do this, as in:
+You then need to install some Python packages which have the functionality we need. 
+
+To install Python packages you can use the "pip3" command, like this:
 ```
-pip3 install numpy
+pip3 install some-package
 ```
 
-The packages you need are:
+The following packages are needed:
 - [numpy](https://numpy.org/install/)
+- [matplotlib](https://matplotlib.org/stable/users/installing/index.html)
+- [PyTorch](https://pytorch.org/TensorRT/tutorials/installation.html)
+- [tqdm](https://pypi.org/project/tqdm/)
 
+That's it, you're all set up. Now let's start Hacking!
 
 
 # Hacking Tasks
