@@ -1,14 +1,20 @@
 Welcome Hackers! 
 
-Below is a more detailed [Background](#rationalle) for the project. In the [Set-up](#set-up) section there are some instructions on things you will need to do before you start hacking. 
+Below is a more detailed [Background](#rationalle) for the project, FYI. 
+
+In the [Set-up](#set-up) section there are some instructions on things you will need to do before you start hacking. 
 
 Once you're all set up, the [Hacking Tasks](#hacking-tasks) and [Resources](#resources) sections are there to help us complete the project!
 
 # Background
 
+<br>
 **What is quantitative MRI?**
 
 Quantitative MRI aims to derive countable explanations (i.e. quantities) from the data we measure in an MRI image. This is acheived by first constructing an explanation for the data. The explanation, or model, maps from the quantities we care about (e.g. number of cells, fiber orientation) to the data. Then, we find out how much of each quantity in the model there should be in order that the data predicted by the model matches the data we observed. This is called 'model fitting' or 'parameter estimation'. 	
+
+
+<br>
 
 **Why do we need machine learning?**
 
@@ -18,6 +24,8 @@ To overcome this, machine learning has been used to construct a direct mapping f
 
 In comparison to voxel-wise fitting, unsupervised learning tries to match the predicted signal with the observed data where the parameters are deriveable from an encoded latent space. In other words, the network learns to map from the data to the predicted data via the parameters of interest and the specified forward model, similarly to an autoencoder. 
 
+<br>
+
 **What research question is our project addressing?**
 
 A big problem with current unsupervised machine learning approaches is that the cost function is wrong. This is because current methods most typically use sum of squared differences as the cost function, which only works when the MRI noise is gaussian distributed. Effectively, it is always assuming the wrong model for the data, because in fact, the noise in MRI images is rician distributed. 
@@ -25,6 +33,8 @@ A big problem with current unsupervised machine learning approaches is that the 
 Lack of gaussianity in MRI images is especially apparent for low SNR MRI images - at low SNR the Rician distribution deviates substantially from a gaussian distribution. The result is that the signal predictions are optimised incorrectly, resulting in incorrect parameter estimates. 
 
 This has not been previously addressed because the Rician probability density function is not differentiable, and differentiable loss functions are needed for backpropagation to work in machine learning. Recently, a paper has introduced a differentiable approximation of the Rician distribution and a differentiable log-likelihood for it. The rician noise model can therefore be adopted and incorporated into unsupervised machine learning to make parameter estimates more accurate.
+
+<br>
 
 # Set-up
 
