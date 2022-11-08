@@ -18,14 +18,12 @@ However, a big problem with current unsupervised approaches is that the predicte
 
 First, you will need to install [Python](https://www.python.org/downloads/).
 
-You will then need to install some Python packages which have the functionality we need. 
-
-To install Python packages you can use the "pip3" command, like this:
+You will then need to install some Python packages. You can use the "pip3" command, like this:
 ```
 pip3 install some-package
 ```
 
-The following packages are needed:
+We need the following packages:
 - [numpy](https://numpy.org/install/)
 - [matplotlib](https://matplotlib.org/stable/users/installing/index.html)
 - [PyTorch](https://pytorch.org/TensorRT/tutorials/installation.html)
@@ -39,18 +37,21 @@ That's it, you're all set up. Now let's start Hacking!
 # Resources
 
 *Hackathon*
+
 CMIC Hackathon website
 https://cmic-ucl.github.io/CMICHACKS/
 Project Issues
 https://github.com/CMIC-UCL/CMICHACKS/issues/7
 
 *Repository links*
+
 [Hackers Guide](Hackers_Guide.md)
 [Our tutorial](deep_qmri_rician.ipynb)
 [Original unsupservised tutorial](deep_qmri_leastsquares_demo.ipynb) (Jupyter notebook)
 [Original unsupservised tutorial](deep_qmri_leastsquares_demo.py) (Python code)
 
 *Papers*
+
 Original deep learning of qMRI paper
 https://onlinelibrary.wiley.com/doi/abs/10.1002/mrm.27910
 A more recent deep learning of qMRI paper 
