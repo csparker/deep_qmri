@@ -45,16 +45,13 @@ This is only a rough guide on what to do, not a strict requirement. So feel free
 <summary>How do I dropdown?</summary>
 <br>
 This is how you dropdown.
-<br>
-<summary>Another dropdown?</summary>
-<br>
-Yep.
 </details>
 
 
 
-**1. Incorporate the Rician likelihood loss function into unsupervised learning**
-
+<details>
+<summary>**1. Incorporate the Rician likelihood loss function into unsupervised learning**</summary>
+<br>
 - Compare the Rician distribution with its differentiable approximation.
 	- what value of Nk is good?
 
@@ -72,6 +69,7 @@ Yep.
 
 - Allow the network to learn the sigma value.
 	- You will need to change the network architecture.
+</details>
 
 <br/>
 
