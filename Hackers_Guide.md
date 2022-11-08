@@ -38,10 +38,10 @@ That's it, you're all set up. Now let's start Hacking!
 
 *Hackathon-related*
 
-CMIC Hackathon website
+CMIC Hackathon website\
 https://cmic-ucl.github.io/CMICHACKS/
 
-Project Issues
+Project Issues\
 https://github.com/CMIC-UCL/CMICHACKS/issues/7
 
 
