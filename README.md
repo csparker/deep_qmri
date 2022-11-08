@@ -1,8 +1,13 @@
 # Deep Learning of qMRI parameters - CMIC Hackathon 2022
 
-Our project aims to make deep learning of quantitative parameters from MRI more accurate. We will do this by incorporating a loss function that correctly handles the shape of the noise in MRI images. We will provide a tutorial demonstrating the approach here.
+This repo has two functions - to help Hackers undertake the project and to host outputs of the project, such as tutorials.
 
-Aside from the demonstration, this repository also contains guides, demo's and other resources to aid Hackers working on the project. Hacker's should start off by checking out the Hackers Guide!
+In a nutshell, the project aims to make deep learning of quantitative parameters from MRI more accurate, by correctly handling the shape MRI image noise. 
+
+Hacker's should start off by checking out the [Hackers Guide](Hackers_Guide)!
+
+Once complete, a tutorial demonstrating the approach will be found [here](deep_qmri_rician).
+
 
 
 
