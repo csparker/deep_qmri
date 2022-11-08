@@ -45,7 +45,12 @@ This is only a rough guide on what to do, not a strict requirement. So feel free
 <summary>How do I dropdown?</summary>
 <br>
 This is how you dropdown.
+<br>
+<summary>Another dropdown?</summary>
+<br>
+Yep.
 </details>
+
 
 
 **1. Incorporate the Rician likelihood loss function into unsupervised learning**
@@ -145,6 +150,7 @@ This is how you dropdown.
 - Tutorial on maximum aposteriori loss function (simulated data)
 - Tutorial showing the maximum aposteriori approach applied to real data
 - Theoretical description of the approach
+
 
 
 # Resources
