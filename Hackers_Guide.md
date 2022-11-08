@@ -1,4 +1,8 @@
-Welcome Hackers! Below is more detail about the rationalle for the project. In the Set-up section there are some instructions on things you will need to do before you start hacking. Once you've set up, the hacking guide and list of useful resources are there to provide a guide to help us complete the project!
+Welcome Hackers! 
+
+Below is a more detailed [rationalle](#-rationalle) for the project. In the [Set-up](#-set-up) section there are some instructions on things you will need to do before you start hacking. Once you're all set up, the [Hacking Tasks](#-hacking-tasks) and [Resources](#-resources) sections are there to help us complete the project!
+
+[link](#1-this-is-my-header)
 
 # Rationalle
 
@@ -12,7 +16,7 @@ However, a big problem with current unsupervised approaches is that the predicte
 
 # Set-up
 
-# Hack 
+# Hacking Tasks
 
 # Resources
 
