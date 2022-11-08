@@ -1,8 +1,6 @@
 Welcome Hackers! 
 
-Below is a more detailed [rationalle](#-rationalle) for the project. In the [Set-up](#-set-up) section there are some instructions on things you will need to do before you start hacking. Once you're all set up, the [Hacking Tasks](#-hacking-tasks) and [Resources](#-resources) sections are there to help us complete the project!
-
-[link](#1-this-is-my-header)
+Below is a more detailed [rationalle](#rationalle) for the project. In the [Set-up](#set-up) section there are some instructions on things you will need to do before you start hacking. Once you're all set up, the [Hacking Tasks](#hacking-tasks) and [Resources](#resources) sections are there to help us complete the project!
 
 # Rationalle
 
