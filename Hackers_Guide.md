@@ -74,7 +74,9 @@ This is how you dropdown.
 
 <br/>
 
-**2. Evaluate accuracy of parameter estimation**
+<details>
+<summary><h3>2. Evaluate accuracy of parameter estimation</h3></summary>
+<br>
 
 - Quantify bias and variance when using the sum of squared loss function.
 	- Assess for a single ground truth parameter value.
@@ -82,20 +84,26 @@ This is how you dropdown.
 - Quantify bias and variance when using the Rician log-likelihood loss function.
 	- Is bias significantly reduced? What about variance?
 
+</details>
+
+
 <br/>
 
-**3. Maximum aposteriori inference**
+<details>
+<summary><h3>3. Maximum aposteriori inference</h3></summary>
+<br>
 
 - Specify plausible priors on each parameters based on the literature.
 	- These may be specific to a particular anatomical region.
 
 - Adapt the network to perform maximum aposteriori inference
 	- This should be a simple update.
+</details>
 
 <br/>
-
-**4. Test on Real data**
-
+<details>
+<summary><h3>4. Test on Real data</h3></summary>
+<br>
 - Download some real DWI data (i.e. from the Human Connectome Project)
 	- I may have some already.
 
@@ -110,11 +118,12 @@ This is how you dropdown.
 
 - Compare the parameter estimates between sum of squares and Rician likelihood loss function
 	- Variance of parameters within ROIs might be a good evaluation metric.
-
+</details>
 <br/>
 
-**5. Try another DWI model** 
-
+<details>
+<summary><h3>5. Try another DWI model</h3></summary>
+<br>
 - Specify the forward model and code this into the network.
 	- The diffusion kurtosis is a good choice because it is even more reliant on low SNR images.
 
@@ -124,32 +133,44 @@ This is how you dropdown.
 - Assess parameter estimation performance on real data
 	- Is the benefit greater for this DWI model than the IVIM model?
 
-
+</details>
 <br/>
 
-**Generalise the Code**
+<details>
+<summary><h3>6. Generalise the Code</h3></summary>
+<br>
 
 - Different DWI models
 - Inclusion/exclusion of priors
 - The loss function
 
+</details>
+
 <br/>
 
-**6. Alternatives to the Rician likelihood**
+<details>
+<summary><h3>6. Alternatives to the Rician likelihood</h3></summary>
+<br>
 
 - Offset gaussian noise model
 	- This uses sum of squares loss function but to an offset signal
 	- see the Resources section for a link to the paper
 
+</details>
+
 <br/>
 
-**7. Outcomes**
+<details>
+<summary><h3>7. Outcomes</h3></summary>
+<br>
+
 - Tutorial explaining the Rician likelihood approach to unsupervised qMRI (simulated data)
 - Tutorial showing the Rician likelihood approach applied to real data
 - Tutorial on maximum aposteriori loss function (simulated data)
 - Tutorial showing the maximum aposteriori approach applied to real data
 - Theoretical description of the approach
 
+</details>
 
 
 # Resources
