@@ -41,6 +41,13 @@ This is only a rough guide on what to do, not a strict requirement. So feel free
 
 <br/>
 
+<details>
+<summary>How do I dropdown?</summary>
+<br>
+This is how you dropdown.
+</details>
+
+
 **1. Incorporate the Rician likelihood loss function into unsupervised learning**
 
 - Compare the Rician distribution with its differentiable approximation.
@@ -134,7 +141,7 @@ This is only a rough guide on what to do, not a strict requirement. So feel free
 
 **7. Outcomes**
 - Tutorial explaining the Rician likelihood approach to unsupervised qMRI (simulated data)
-- Tutorial showing the maximum likelihood approach applied to real data
+- Tutorial showing the Rician likelihood approach applied to real data
 - Tutorial on maximum aposteriori loss function (simulated data)
 - Tutorial showing the maximum aposteriori approach applied to real data
 - Theoretical description of the approach
@@ -154,16 +161,19 @@ https://github.com/CMIC-UCL/CMICHACKS/issues/7
 
 *Repository internal links*
 
+Main page\
+https://github.com/csparker/deep_qmri
+
 Hackers Guide\
 https://github.com/csparker/deep_qmri/blob/master/Hackers_Guide.md
 
 Our tutorial (in progress)\
 https://github.com/csparker/deep_qmri/blob/master/deep_qmri_rician.ipynb
 
-Original unsupservised tutorial (Jupyter notebook)\
+A useful template for unsupservised qMRI tutorial (Jupyter notebook)\
 https://github.com/csparker/deep_qmri/blob/master/deep_qmri_leastsquares_demo.ipynb
 
-Original unsupservised tutorial (Python code)\
+A useful template for unsupervised ML qMRI tutorial (Python code)\
 https://github.com/csparker/deep_qmri/blob/master/deep_qmri_leastsquares_demo.py
 
 <br/>
@@ -171,14 +181,14 @@ https://github.com/csparker/deep_qmri/blob/master/deep_qmri_leastsquares_demo.py
 
 *Relevant Publications*
 
-Original deep learning of qMRI paper\
-https://onlinelibrary.wiley.com/doi/abs/10.1002/mrm.27910
-
-A more recent deep learning of qMRI paper\
-https://arxiv.org/abs/2205.05587
-
 Paper on differentiable Rician log-likelihood\
 https://link.springer.com/chapter/10.1007/978-3-031-11203-4_16
+
+Deep learning of qMRI paper (base network on which we're building)\
+https://onlinelibrary.wiley.com/doi/abs/10.1002/mrm.27910
+
+A more recent deep learning of qMRI paper (good for evaluation methods)\
+https://arxiv.org/abs/2205.05587
 
 Another paper on Deep learning of qMRI parameters and training data distribution\
 https://onlinelibrary.wiley.com/doi/full/10.1002/mrm.29014
@@ -196,7 +206,7 @@ https://onlinelibrary.wiley.com/doi/full/10.1002/mrm.25080
 
 *Other*
 
-Repository for the original deep learning of qMRI\
+Repository for the original deep learning of qMRI (this is where I got the template)\
 https://github.com/sebbarb/deep_ivim
 
 
