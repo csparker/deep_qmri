@@ -40,17 +40,17 @@ Below is a list of tasks for the Hackathon, with hints or suggestions under each
 This is only a rough guide on what to do, not a strict requirement. So feel free to suggest other things that might not be on the list!
 
 <br/>
-
+<!-- 
 <details>
 <summary>How do I dropdown?</summary>
 <br>
 This is how you dropdown.
-</details>
+</details> -->
 
 
 
 <details>
-<summary>**1. Incorporate the Rician likelihood loss function into unsupervised learning**</summary>
+<summary><h2>**1. Incorporate the Rician likelihood loss function into unsupervised learning**</h2></summary>
 <br>
 
 - Compare the Rician distribution with its differentiable approximation.
