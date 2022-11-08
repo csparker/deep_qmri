@@ -9,6 +9,7 @@ Once you're all set up, the [Hacking Tasks](#hacking-tasks) and [Resources](#res
 # Background
 
 <br>
+
 **What is quantitative MRI?**
 
 Quantitative MRI aims to derive countable explanations (i.e. quantities) from the data we measure in an MRI image. This is acheived by first constructing an explanation for the data. The explanation, or model, maps from the quantities we care about (e.g. number of cells, fiber orientation) to the data. Then, we find out how much of each quantity in the model there should be in order that the data predicted by the model matches the data we observed. This is called 'model fitting' or 'parameter estimation'. 	
