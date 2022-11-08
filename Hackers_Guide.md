@@ -52,6 +52,7 @@ This is how you dropdown.
 <details>
 <summary>**1. Incorporate the Rician likelihood loss function into unsupervised learning**</summary>
 <br>
+
 - Compare the Rician distribution with its differentiable approximation.
 	- what value of Nk is good?
 
