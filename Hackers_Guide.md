@@ -19,9 +19,9 @@ However, a big problem with current unsupervised approaches is that the predicte
 First, you will need to [install Python](https://www.python.org/downloads/).
 
 You then need to install some Python packages. I recommend using the "pip3" command to do this, as in:
-'''
+```
 pip3 install numpy
-'''
+```
 
 The packages you need are:
 - [numpy](https://numpy.org/install/)
