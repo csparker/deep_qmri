@@ -80,7 +80,7 @@ This is how you dropdown.
 <summary><h3>1. Incorporate the Rician likelihood loss function into unsupervised learning</h3></summary>
 <br>
 
-- Compare the Rician distribution with its [differentiable approximation]((https://link.springer.com/chapter/10.1007/978-3-031-11203-4_16).
+- Compare the Rician distribution with its [differentiable approximation](https://link.springer.com/chapter/10.1007/978-3-031-11203-4_16).
 	- what value of Nk leads to a good approximation?
 
 - Using simulated Rician data, compare the likelihood of the data under a Rician distribution and under the differentiable approximation of the Rician distribution.
