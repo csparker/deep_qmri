@@ -60,7 +60,7 @@ That's it, you're all set up. Now let's start Hacking!
 # Hacking Tasks
 
 
-Below is a list of tasks for the Hackathon, with hints/suggestions under each.
+Below is a list of tasks for Hackathon, with hints/suggestions under each.
 
 This is only meant as a rough guide. Feel free to suggest or discuss other ideas that might not be on the list!
 
@@ -80,8 +80,8 @@ This is how you dropdown.
 <summary><h3>1. Incorporate the Rician likelihood loss function into unsupervised learning</h3></summary>
 <br>
 
-- Compare the Rician distribution with its differentiable approximation.
-	- what value of Nk is good?
+- Compare the Rician distribution with its [differentiable approximation]((https://link.springer.com/chapter/10.1007/978-3-031-11203-4_16).
+	- what value of Nk leads to a good approximation?
 
 - Using simulated Rician data, compare the likelihood of the data under a Rician distribution and under the differentiable approximation of the Rician distribution.
 	- Are the likelihoods highly correlated?
@@ -90,13 +90,13 @@ This is how you dropdown.
 	- Use a fixed value of sigma for now.
 
 - Add the new PyTorch loss function into the unsupervised learning network.
-	- You can use the logsumexp() function described in Simpson et al (2021).
+	- You can use the logsumexp() function described in Simpson et al (2021), which is supposed to be numerically stable.
 
 - Use the network to estimate IVIM parameters from simulated data.
 	- Do the parameter estimates look reasonable?
 
 - Allow the network to learn the sigma value.
-	- You will need to change the network architecture.
+	- We will need to change the network architecture.
 </details>
 
 <br/>
@@ -120,11 +120,11 @@ This is how you dropdown.
 <summary><h3>3. Maximum aposteriori inference</h3></summary>
 <br>
 
-- Specify plausible priors on each parameters based on the literature.
+- Specify plausible priors on each parameter based on the literature.
 	- These may be specific to a particular anatomical region.
 
 - Adapt the network to perform maximum aposteriori inference
-	- This should be a simple update.
+
 </details>
 
 <br/>
@@ -133,19 +133,20 @@ This is how you dropdown.
 <br>
 
 - Download some real DWI data (i.e. from the Human Connectome Project)
-	- I may have some already.
+	- I can provide you with some data.
 
-- Re-train the network on synthetic DWI data acquired with the same settings as real data.
-	- You could create a seperate tutorial for this.
+- Re-train the network on synthetic DWI data acquired with the same settings (b-values) as the real data.
+	- You could create a seperate tutorial for the real data application.
 
 - Estimate the parameter maps for real data
-	- Save the parameter maps as nifti files.
+	- Save the parameter maps as nifti files! This will be useful later.
 
 - Repeat the above but for the sum of squares loss function
 	- Can the network settings be saved to prevent re-training?
 
 - Compare the parameter estimates between sum of squares and Rician likelihood loss function
-	- Variance of parameters within ROIs might be a good evaluation metric.
+	- Variance of parameters within ROIs might be a good evaluation metric (lower is probably better)
+
 </details>
 <br/>
 
@@ -155,10 +156,11 @@ This is how you dropdown.
 
 
 - Specify the forward model and code this into the network.
-	- The diffusion kurtosis is a good choice because it is even more reliant on low SNR images.
+	- The diffusion kurtosis model (see Resource section!) is a good choice because it is even more reliant on low SNR images.
 
 - Re-train the network using simulated data and evaluate parameter estimation performance
 	- Make sure the acquisition settings are suitable for the model.
+	- Use an appropriate range of parameter values.
 
 - Assess parameter estimation performance on real data
 	- Is the benefit greater for this DWI model than the IVIM model?
@@ -183,8 +185,8 @@ This is how you dropdown.
 <br>
 
 - Offset gaussian noise model
-	- This uses sum of squares loss function but to an offset signal
-	- see the Resources section for a link to the paper
+	- This uses sum of squares loss function but to an offset predicted signal
+	- see the Resources section for a link to the paper on Gaussian offset noise model
 
 </details>
 
@@ -193,8 +195,10 @@ This is how you dropdown.
 
 **Project Outcomes**
 
-- Tutorials on:
-	- Rician likelihood approach to unsupervised qMRI (simulated data)
+- Main aim:
+	- Create a tutorial on using the Rician likelihood approach to unsupervised qMRI (simulated data).
+
+- If time, we could also make tutorials/walk-through on:
 	- Rician likelihood approach applied to real data
 	- Maximum aposteriori inference unsupervised qMRI (simulated data)
 	- Maximum aposteriori approach applied to real data

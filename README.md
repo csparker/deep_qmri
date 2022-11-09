@@ -8,7 +8,7 @@ Hacker's should start off by checking out the [Hackers Guide](Hackers_Guide.md)!
 
 Once complete, a tutorial demonstrating the new approach can be hosted [here](deep_qmri_rician.ipynb).
 
-Our tutorial can extend the one for the original unsupervised approach, which can be found in this repository, [here](deep_qmri_leastsquares_demo.ipynb) (Jupyter notebook) or [here](deep_qmri_leastsquares_demo.py) (Python code)
+Our tutorial can extend the one for the original unsupervised approach, which has been copied into this repository, [here](deep_qmri_leastsquares_demo.ipynb) (Jupyter notebook) or [here](deep_qmri_leastsquares_demo.py) (Python code)
 
 
 
