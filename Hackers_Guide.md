@@ -2,7 +2,7 @@ Welcome Hackers!
 
 Below is a more detailed [Background](#rationalle) for the project, FYI. 
 
-In the [Set-up](#set-up) section there are some instructions on things you will need to do before you start hacking. 
+The [Set-up](#set-up) section lists some things you will need to do before you start hacking. 
 
 Once you're all set up, the [Hacking Tasks](#hacking-tasks) and [Resources](#resources) sections are there to help us complete the project!
 
@@ -55,6 +55,7 @@ The following packages are needed:
 
 That's it, you're all set up. Now let's start Hacking!
 
+<br>
 
 # Hacking Tasks
 
@@ -130,6 +131,7 @@ This is how you dropdown.
 <details>
 <summary><h3>4. Test on Real data</h3></summary>
 <br>
+
 - Download some real DWI data (i.e. from the Human Connectome Project)
 	- I may have some already.
 
@@ -150,6 +152,8 @@ This is how you dropdown.
 <details>
 <summary><h3>5. Try another DWI model</h3></summary>
 <br>
+
+
 - Specify the forward model and code this into the network.
 	- The diffusion kurtosis is a good choice because it is even more reliant on low SNR images.
 
@@ -197,6 +201,7 @@ This is how you dropdown.
 
 - Theoretical description of the methods
 
+<br>
 
 # Resources
 
