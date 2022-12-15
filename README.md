@@ -1,15 +1,21 @@
-# Deep Learning of qMRI parameters - CMIC Hackathon 2022
+# Deep Learning of qMRI Parameters using Rician Likelihood-based Loss Function
+
+This repository contains resources for performing accurate quantitative MRI parameter estimation using unsupervised deep learning.
 
 In a nutshell, the project aims to make deep learning of quantitative parameters from MRI more accurate. We aim to acheive this by correctly handling the distribution of MRI image noise when evaluating the loss function. 
 
-The repository provides some useful **resources** to help Hackers undertake the project. It will also host the **outputs** of the project.
+By using a Rician Likelihood-based loss function, parameter estimation bias is theoretically and empirically removed, compared to using the Mean Squared Error (MSE) loss function.
 
-Hacker's should start off by checking out the [Hackers Guide](Hackers_Guide.md)!
+Our publication describes the approach and evaluates parameter estimation performance:
 
-Once complete, a tutorial demonstrating the new approach can be hosted [here](deep_qmri_rician.ipynb).
+Parker, CS., Schroder, A., Epstein, S., Cole, J., Zhang, G. (2023) [Rician Likelihood-based loss function for unsupervised learning of quantitative MRI parameters](https://onlinelibrary.wiley.com/action/doSearch?AllField=technical+note&SeriesKey=15222594). *Magnetic Resonance Imaging in Medicine*. (Authors and DOI to be confirmed) 
 
-Our tutorial can extend the one for the original unsupervised approach, which has been copied into this repository, [here](deep_qmri_leastsquares_demo.ipynb) (Jupyter notebook) or [here](deep_qmri_leastsquares_demo.py) (Python code)
 
+This repository contains:
+- A short description of the problem and how we addressed it.
+- Python notebook describing how to implement the technique in PyTorch.
+- Python code for the PyTorch implementation.
+- Implementations for Keras and TensorFlow.
 
 
 
