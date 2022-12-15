@@ -12,7 +12,7 @@ By using a Rician Likelihood-based loss function, parameter estimation bias is t
 
 Our publication describes the approach and evaluates parameter estimation performance:
 
-Parker, CS., Schroder, A., Epstein, S., Cole, J., Zhang, G. (2023) [Rician Likelihood-based loss function for unsupervised learning of quantitative MRI parameters](https://onlinelibrary.wiley.com/action/doSearch?AllField=technical+note&SeriesKey=15222594). *Journal*. 
+*Authors*. (2023) [Rician Likelihood-based loss function for unsupervised learning of quantitative MRI parameters](https://onlinelibrary.wiley.com/action/doSearch?AllField=technical+note&SeriesKey=15222594). *Journal*. 
 
 (Author list and DOI T.B.C) 
 
