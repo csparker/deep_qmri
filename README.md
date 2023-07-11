@@ -8,7 +8,7 @@ Note that the walkthrough is an adaptation of the demo hosted at https://github.
 
 
 ## References
-[1] Parker CS, Schroder A, Epstein SC, Cole J, Alexander DC, Zhang G. Rician likelihood loss function for quantitative MRI with deep learning, arXiV.
+[1] Parker CS, Schroder A, Epstein SC, Cole J, Alexander DC, Zhang H. Rician likelihood loss function for quantitative MRI with deep learning, arXiV.
 
 
 
