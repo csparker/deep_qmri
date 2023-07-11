@@ -1,20 +1,15 @@
-# Deep Learning of qMRI Parameters using Rician Likelihood-based Loss Function
+# Rician likelihood loss function for quantitative MRI with deep learning
 
-This repository contains resources for performing accurate quantitative MRI parameter estimation using unsupervised deep learning:
-- A short description of the problem and how we addressed it.
-- Python notebook describing how to implement the technique in PyTorch.
-- Python code for the PyTorch implementation.
-- Implementations for Keras and TensorFlow.
+This repository contains a walkthrough and example implementations of the Rician likelihood loss function for self-supervised quantitative MRI (qMRI) as described in Parker et al (2023) [1]. 
 
-In a nutshell, the project aims to make deep learning of quantitative parameters from MRI more accurate. We aim to acheive this by correctly handling the distribution of MRI image noise when evaluating the loss function. 
+The [walkthrough](Walkthrough_Rician_Loss.ipynb) goes through a simple example of applying the Rician loss function for self-supervised qMRI. Note that it is an adaptation of the demo hosted at https://github.com/sebbarb/deep_ivim - we thank the authors for making their demo code easy to use and openly available. The [example implementations](Implementations) provide syntax to specify and call the Rician loss function in [PyTorch](Rician_Loss_PyTorch.ipynb), [TensorFlow](Rician_Loss_PyTorch.ipynb) and [Keras](Rician_Loss_PyTorch.ipynb).
 
-By using a Rician Likelihood-based loss function, parameter estimation bias is theoretically and empirically removed, compared to using the Mean Squared Error (MSE) loss function.
 
-Our publication describes the approach and evaluates parameter estimation performance:
+## References
+[1] Parker CS, Schroder A, Epstein SC, Cole J, Alexander DC, Zhang G. Rician likelihood loss function for quantitative MRI with deep learning, arXiV.
 
-*Authors*. (2023) [Rician Likelihood-based loss function for unsupervised learning of quantitative MRI parameters](https://onlinelibrary.wiley.com/action/doSearch?AllField=technical+note&SeriesKey=15222594). *Journal*. 
 
-(Author list and DOI T.B.C) 
+
 
 
 
